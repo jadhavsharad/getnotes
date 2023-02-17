@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --background:#e4f0fb;
+    --active-background:rgba(255, 60, 90);
+    --header-color:hsl(0, 0%, 100%);
+    --font-weight:500;
+    --font-1:'Poppins', sans-serif;
+    --font-2:'Sora', sans-serif;
+    --active-font-color:rgb(255, 255, 255);
+    --display-flex:flex;
+    --border-radius: 12px;
+    --transition-animation: all 0.4s ease;
+    --hover-transform-scale:scale(1.05);
+    --text-uppercase:uppercase;
+    --text-captalize:capitalize;
+    --justify-center:center;
+    --border-width:0.13rem;
+    --border-color:dodgerblue;
+    --border-style:solid;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' id='svg' viewBox='0 0 1440 390' xmlns='http://www.w3.org/2000/svg' class='transition duration-300 ease-in-out delay-150'%3E%3Cstyle%3E .path-0%7B animation:pathAnim-0 4s%3B animation-timing-function: linear%3B animation-iteration-count: infinite%3B %7D %40keyframes pathAnim-0%7B 0%25%7B d: path('M 0 400 C 0 400 0 133 0 133 C 100.35714285714286 118.85714285714286 200.71428571428572 104.71428571428571 330 94 C 459.2857142857143 83.28571428571429 617.5 75.99999999999997 759 94 C 900.5 112.00000000000003 1025.2857142857142 155.2857142857143 1136 166 C 1246.7142857142858 176.7142857142857 1343.357142857143 154.85714285714283 1440 133 C 1440 133 1440 400 1440 400 Z')%3B %7D 25%25%7B d: path('M 0 400 C 0 400 0 133 0 133 C 121.92857142857142 132.17857142857144 243.85714285714283 131.35714285714286 356 137 C 468.14285714285717 142.64285714285714 570.5000000000001 154.75 697 155 C 823.4999999999999 155.25 974.1428571428571 143.64285714285714 1102 138 C 1229.857142857143 132.35714285714286 1334.9285714285716 132.67857142857144 1440 133 C 1440 133 1440 400 1440 400 Z')%3B %7D 50%25%7B d: path('M 0 400 C 0 400 0 133 0 133 C 103.67857142857142 109.46428571428572 207.35714285714283 85.92857142857143 312 85 C 416.64285714285717 84.07142857142857 522.2500000000001 105.75000000000001 665 107 C 807.7499999999999 108.24999999999999 987.6428571428571 89.07142857142857 1123 90 C 1258.357142857143 90.92857142857143 1349.1785714285716 111.96428571428572 1440 133 C 1440 133 1440 400 1440 400 Z')%3B %7D 75%25%7B d: path('M 0 400 C 0 400 0 133 0 133 C 84 141.75 168 150.5 298 162 C 428 173.5 604 187.75 737 181 C 870 174.25 960 146.5 1070 135 C 1180 123.5 1310 128.25 1440 133 C 1440 133 1440 400 1440 400 Z')%3B %7D 100%25%7B d: path('M 0 400 C 0 400 0 133 0 133 C 100.35714285714286 118.85714285714286 200.71428571428572 104.71428571428571 330 94 C 459.2857142857143 83.28571428571429 617.5 75.99999999999997 759 94 C 900.5 112.00000000000003 1025.2857142857142 155.2857142857143 1136 166 C 1246.7142857142858 176.7142857142857 1343.357142857143 154.85714285714283 1440 133 C 1440 133 1440 400 1440 400 Z')%3B %7D %7D%3C/style%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='5%25' stop-color='%23F78DA7'%3E%3C/stop%3E%3Cstop offset='95%25' stop-color='%238ED1FC'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 0 400 C 0 400 0 133 0 133 C 100.35714285714286 118.85714285714286 200.71428571428572 104.71428571428571 330 94 C 459.2857142857143 83.28571428571429 617.5 75.99999999999997 759 94 C 900.5 112.00000000000003 1025.2857142857142 155.2857142857143 1136 166 C 1246.7142857142858 176.7142857142857 1343.357142857143 154.85714285714283 1440 133 C 1440 133 1440 400 1440 400 Z' stroke='none' stroke-width='0' fill='url(%23gradient)' fill-opacity='0.53' class='transition-all duration-300 ease-in-out delay-150 path-0'%3E%3C/path%3E%3Cstyle%3E .path-1%7B animation:pathAnim-1 4s%3B animation-timing-function: linear%3B animation-iteration-count: infinite%3B %7D %40keyframes pathAnim-1%7B 0%25%7B d: path('M 0 400 C 0 400 0 266 0 266 C 81.35714285714286 260.9642857142857 162.71428571428572 255.92857142857144 308 257 C 453.2857142857143 258.07142857142856 662.5000000000001 265.25 782 270 C 901.4999999999999 274.75 931.2857142857142 277.07142857142856 1026 276 C 1120.7142857142858 274.92857142857144 1280.357142857143 270.4642857142857 1440 266 C 1440 266 1440 400 1440 400 Z')%3B %7D 25%25%7B d: path('M 0 400 C 0 400 0 266 0 266 C 91.25 256.9642857142857 182.5 247.92857142857144 300 252 C 417.5 256.07142857142856 561.25 273.25 705 281 C 848.75 288.75 992.5 287.07142857142856 1115 283 C 1237.5 278.92857142857144 1338.75 272.4642857142857 1440 266 C 1440 266 1440 400 1440 400 Z')%3B %7D 50%25%7B d: path('M 0 400 C 0 400 0 266 0 266 C 104.60714285714286 265.75 209.21428571428572 265.5 342 273 C 474.7857142857143 280.5 635.7500000000001 295.75 767 283 C 898.2499999999999 270.25 999.7857142857142 229.5 1107 222 C 1214.2142857142858 214.5 1327.107142857143 240.25 1440 266 C 1440 266 1440 400 1440 400 Z')%3B %7D 75%25%7B d: path('M 0 400 C 0 400 0 266 0 266 C 85 271.6071428571429 170 277.2142857142857 300 278 C 430 278.7857142857143 605 274.75000000000006 748 279 C 891 283.24999999999994 1002 295.7857142857143 1112 295 C 1222 294.2142857142857 1331 280.1071428571429 1440 266 C 1440 266 1440 400 1440 400 Z')%3B %7D 100%25%7B d: path('M 0 400 C 0 400 0 266 0 266 C 81.35714285714286 260.9642857142857 162.71428571428572 255.92857142857144 308 257 C 453.2857142857143 258.07142857142856 662.5000000000001 265.25 782 270 C 901.4999999999999 274.75 931.2857142857142 277.07142857142856 1026 276 C 1120.7142857142858 274.92857142857144 1280.357142857143 270.4642857142857 1440 266 C 1440 266 1440 400 1440 400 Z')%3B %7D %7D%3C/style%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='5%25' stop-color='%23F78DA7'%3E%3C/stop%3E%3Cstop offset='95%25' stop-color='%238ED1FC'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 0 400 C 0 400 0 266 0 266 C 81.35714285714286 260.9642857142857 162.71428571428572 255.92857142857144 308 257 C 453.2857142857143 258.07142857142856 662.5000000000001 265.25 782 270 C 901.4999999999999 274.75 931.2857142857142 277.07142857142856 1026 276 C 1120.7142857142858 274.92857142857144 1280.357142857143 270.4642857142857 1440 266 C 1440 266 1440 400 1440 400 Z' stroke='none' stroke-width='0' fill='url(%23gradient)' fill-opacity='1' class='transition-all duration-300 ease-in-out delay-150 path-1'%3E%3C/path%3E%3C/svg%3E");
+    background-color: #e4f0fb;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    transition: var(--transition-animation);
+    -moz-transition: var(--transition-animation);
+    -webkit-transition: var(--transition-animation);
+    -ms-transition:var(--transition-animation);
+    -o-transition: var(--transition-animation);
+    
+  }
+
+
+
+header{
+    height: 40px;
+    overflow: hidden;
+    display: var(--display-flex);
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-color);
+    padding: 18px;
+    margin: 12px 10px;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 6px 60px rgba(0, 0, 0, 0.14);
+    
+}
+
+h1{
+    margin-left: 10px;
+    font-family: var(--font-1);
+    text-transform: var(--text-uppercase);
+    font-weight: var(--font-weight);
+}
+
+nav{
+    display: var(--display-flex);
+    padding: 8px 8px;
+    border-radius: var(--border-radius);
+  }
+
+nav .title-2{
+    display: none;
+}
+
+nav input{
+    text-transform: capitalize;
+    font-family: var(--font-2);
+    background-color: white;
+    margin-left: 10px;
+    outline: none;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 0px 12px;
+    align-self: center;
+    border-color: rgb(212, 212, 212);
+    border-width:var(--border-width);
+    height: 36px;
+    width: 250px
+}
+
+nav input:focus{
+    border-color:var(--border-color);
+}
+
+
+
+nav a{
+    margin: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: black;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-family:var(--font-2);
+    transition: all 0.1s ease;
+    
+    
+}
+
+nav svg{
+    padding: 0px 8px 0px 0px;
+    transform: translateY(2px);
+  }  
+
+
+nav a.active{
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.06);
+    color: var(--active-font-color);
+    background:linear-gradient(to bottom, rgba(0, 128, 255, 1) 0%, rgba(80, 155, 255, 1) 100%);
+}
+
+
+nav a:hover{
+    transform: var(--hover-transform-scale);
+    color: white;
+    background:linear-gradient(to top, rgba(255, 60, 100, 1) 0%, rgba(255, 80, 80, 1) 100%);
+}
+
+
+
+table{
+    margin: 60px auto;
+    font-family: var(--font-2);
+    text-align: center;
+    /* border-style: solid; */
+}
+
+.table-head{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.table-head img{
+   padding: 10px; 
+    width: 48px;
+}
+
+
+table td{
+    cursor: pointer;
+    text-transform: var(--text-captalize);
+    font-size: medium;
+    background-color: rgb(255, 255, 255);
+    border-style: var(--border-style);
+    border-width: var(--border-width);
+    border-color: white;
+    margin: 5px 20px;
+    padding: 4px 24px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+
+}
+
+table td:hover{
+    border-color: var(--border-color);
+    transform: var(--hover-transform-scale);
+    transition: all 0.15s ease-in-out;
+}
+
+
+table img{
+    padding: 14px 34px 14px 16px;
+    width: 48px;
+    height: auto;
+}
+
+
+
+            
+
+
+
+
+
+
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 1024px){
+
+    header{
+        height: auto;
+        justify-content: var(--justify-center);
+    }
+    header .title{
+        display: none;
+    } 
+    header .title-2{
+        margin-bottom: 10px;
+        display: var(--display-flex);
+    }
+
+    nav {
+        background-color: rgba(122, 122, 122, 0.2);
+        justify-content: var(--justify-center);
+        max-width:350px;;
+        flex-wrap: wrap;
+    }
+    nav a {
+        width: 100%;
+        margin-top: 0px;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    nav input{
+        height: 40px;
+        margin: 10px;
+        padding: 0px 10px;
+        width: 100%;
+    };
+
+    table td{
+        font-size: small;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Loading Screen */
+
+.wrapper{
+    width:200px;
+    height:60px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+.circle{
+    width:20px;
+    height:20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: dodgerblue;
+    left:15%;
+    transform-origin: 50%;
+    animation: circle .5s alternate infinite ease;
+}
+
+@keyframes circle{
+    0%{
+        top:60px;
+        height:5px;
+        border-radius: 50px 50px 25px 25px;
+        transform: scaleX(1.7);
+    }
+    40%{
+        height:20px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+    100%{
+        top:0%;
+    }
+}
+.circle:nth-child(2){
+    left:45%;
+    animation-delay: .2s;
+}
+.circle:nth-child(3){
+    left:auto;
+    right:15%;
+    animation-delay: .3s;
+}
+.shadow{
+    width:20px;
+    height:4px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top:62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left:15%;
+    filter: blur(1px);
+    animation: shadow .5s alternate infinite ease;
+}
+
+@keyframes shadow{
+    0%{
+        transform: scaleX(1.5);
+    }
+    40%{
+        transform: scaleX(1);
+        opacity: .7;
+    }
+    100%{
+        transform: scaleX(.2);
+        opacity: .4;
+    }
+}
+.shadow:nth-child(4){
+    left: 45%;
+    animation-delay: .2s
+}
+.shadow:nth-child(5){
+    left:auto;
+    right:15%;
+    animation-delay: .3s;
+}
+.wrapper span{
+    position: absolute;
+    top:75px;
+    font-family: 'Lato';
+    font-size: 20px;
+    letter-spacing: 12px;
+    color: #fff;
+    left:15%;
+}
