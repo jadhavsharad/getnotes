@@ -335,11 +335,14 @@ table img{
     animation-delay: .3s;
 }
 .wrapper span{
+    text-transform: var(--text-uppercase);
+    font-family: var(--font-3);
+    font-weight: 700;
     position: absolute;
     top:75px;
     font-family: 'Lato';
     font-size: 20px;
-    letter-spacing: 12px;
-    color: #fff;
+    letter-spacing: 8px;
+    color: dodgerblue;
     left:15%;
 }
