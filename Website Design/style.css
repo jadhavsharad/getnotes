@@ -259,9 +259,15 @@ table img{
     }
 }
 @media screen and (max-width: 768px){
+    html{
+        background-image: none;
+    }
+
     table td{
         font-size: 0.9rem;
         margin: 15px 30px;
+        font-size: smaller;
+        box-shadow: none;
     }
     .table-head{
         font-size: large;
