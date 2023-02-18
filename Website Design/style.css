@@ -231,7 +231,7 @@ table img{
     }
 
     nav {
-        background-color: rgba(122, 122, 122, 0.2);
+        background-color: rgba(170, 170, 170, 0.2);
         justify-content: var(--justify-center);
         max-width:500px;;
         flex-wrap: wrap;
