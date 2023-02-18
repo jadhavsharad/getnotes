@@ -250,7 +250,8 @@ table img{
 
     table td{
         margin: 20px;
-        font-size: small;
+        font-size: smaller;
+        box-shadow: none;
     }
 
     .table-head{
