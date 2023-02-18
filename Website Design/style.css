@@ -212,7 +212,7 @@ table img{
 @media screen and (max-width: 1024px){
 
     html{
-        background-image: none;
+         background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' id='svg' viewBox='0 0 1440 390' xmlns='http://www.w3.org/2000/svg' class='transition duration-300 ease-in-out delay-150'%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='5%25' stop-color='%23eb144c'%3E%3C/stop%3E%3Cstop offset='95%25' stop-color='%23ff6900'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 0 400 C 0 400 0 133 0 133 C 84.08612440191388 148.55980861244018 168.17224880382776 164.1196172248804 277 173 C 385.82775119617224 181.8803827751196 519.3971291866029 184.08133971291866 618 163 C 716.6028708133971 141.91866028708134 780.2392344497606 97.55502392344496 851 99 C 921.7607655502394 100.44497607655504 999.6459330143541 147.69856459330146 1099 161 C 1198.3540669856459 174.30143540669854 1319.1770334928228 153.65071770334927 1440 133 C 1440 133 1440 400 1440 400 Z' stroke='none' stroke-width='0' fill='url(%23gradient)' fill-opacity='0.53' class='transition-all duration-300 ease-in-out delay-150 path-0'%3E%3C/path%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='50%25' x2='100%25' y2='50%25'%3E%3Cstop offset='5%25' stop-color='%23eb144c'%3E%3C/stop%3E%3Cstop offset='95%25' stop-color='%23ff6900'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 0 400 C 0 400 0 266 0 266 C 105.41626794258374 244.23923444976077 210.8325358851675 222.47846889952157 298 232 C 385.1674641148325 241.52153110047843 454.08612440191393 282.3253588516746 557 300 C 659.9138755980861 317.6746411483254 796.8229665071771 312.22009569377985 887 290 C 977.1770334928229 267.77990430622015 1020.622009569378 228.79425837320576 1105 222 C 1189.377990430622 215.20574162679424 1314.688995215311 240.60287081339712 1440 266 C 1440 266 1440 400 1440 400 Z' stroke='none' stroke-width='0' fill='url(%23gradient)' fill-opacity='1' class='transition-all duration-300 ease-in-out delay-150 path-1'%3E%3C/path%3E%3C/svg%3E");
         background-size: contain;
     }
 
@@ -231,7 +231,7 @@ table img{
     nav {
         background-color: rgba(122, 122, 122, 0.2);
         justify-content: var(--justify-center);
-        max-width:350px;;
+        max-width:500px;;
         flex-wrap: wrap;
     }
     nav a {
@@ -246,12 +246,12 @@ table img{
         margin: 10px;
         padding: 0px 10px;
         width: 100%;
-    }
+        border-color: #919191;
+    };
 
     table td{
         margin: 20px;
-        font-size: smaller;
-        box-shadow: none;
+        font-size: small;
     }
 
     .table-head{
@@ -260,22 +260,38 @@ table img{
 }
 @media screen and (max-width: 768px){
     html{
-        background-image: none;
+        background-image: url(Assets/background/vertical.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+    header{
+        background: none;
+        height: auto;
+        box-shadow: none;
+        justify-content: var(--justify-center);
     }
 
     table td{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin: 15px 30px;
-        font-size: smaller;
-        box-shadow: none;
     }
     .table-head{
+        text-align: justify;
         font-size: large;
     }
     .table-head img{
         padding: 10px; 
         width: 36px;
      }
+
+     table img{
+        padding: 14px 20px;
+        width: 30px;
+        height: auto;
+    }
+    
 }
 
 
